@@ -1,0 +1,3 @@
+var parent = document.getElementsByClassName('<%=@task.category.title%>')[0];
+var child = document.getElementById('<%= @task.title  %>');
+parent.removeChild(child);

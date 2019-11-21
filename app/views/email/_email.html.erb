@@ -1,0 +1,5 @@
+<tr scope="col"  id="<%= email.id %>">
+  <td>
+    <a href="<%= email_path(email.id) %>" id="link-<%= email.id %>" class="no-decoration <%= email.read == true ? "read" : "" %>" data-remote="true"><%= email.title %></a>
+  </td>
+</tr>

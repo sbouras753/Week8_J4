@@ -1,0 +1,6 @@
+document.getElementById('link-<%= @email.id %>').classList.add('read')
+var showing = document.getElementById('show-email');
+while (showing.firstChild) {
+  showing.removeChild(showing.firstChild);
+};
+showing.insertAdjacentHTML("afterbegin", "<%= j render 'show', email: @email %>")

@@ -1,0 +1,10 @@
+var link = document.getElementById('link-<%= @email.id %>');
+var btn = document.getElementsByClassName('btn-secondary')[0];
+if (btn.textContent === "Marquer comme non-lu") {
+  btn.textContent = "Marquer comme lu";
+  link.classList.remove('read');
+}
+else {
+  btn.textContent = "Marquer comme non-lu";
+  link.classList.add('read');
+}
